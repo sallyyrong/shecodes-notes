@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polaroid Wall 📸</title>
+<style>
+    h2{
+        font-size: 60px;
+        background: #4BB3BE;
+        color: #E5E5E3;
+
+        margin: 3px 3px;   
+    }
+    h1{
+        font-size: 80px;
+        margin: 36px 0px;
+    }
+    h3{
+        text-align: center;
+        line-height: 20px;
+        margin: auto 50px;
+        font-size: 26px;
+        font-weight: bold;
+        color: white;
+
+    }
+    hr{
+        border: none;
+        border-top: 3px double #333;
+    }
+    button{
+        display: block;
+        margin: 60px auto;
+        padding: 12px 16px;
+        font-size: 20px;
+        border-radius: 50px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        background: linear-gradient(109.6deg, rgb(17, 151, 147) 11.2%, rgb(154, 214, 212) 55.4%, rgb(255, 233, 171) 100.2%);
+        border: 2px;
+        color: white;
+        transition: all 200ms ease-in-out;
+        
+    }
+    button:hover{
+        background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+        color: black;
+        cursor: pointer;
+        }
+    
+    .container{
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 15px 50px;
+        background: linear-gradient(89.9deg, rgb(208, 246, 255) 0.1%, rgb(255, 237, 237) 47.9%, rgb(255, 255, 231) 100.2%);
+        background: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+        background: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+        background-color: #f9484a;
+        background-image: linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
+    }
+
+    /* movingText code from W3Schools */
+    .movingText{
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typewriter;
+        display: inline-block;
+        position: relative;
+        animation-duration: 6s;
+        animation-timing-function: steps(25, end);
+        animation-iteration-count: infinite;
+        transition: all 200ms ease-in-out;
+    }
+    .movingText::after{
+        content: "|";
+        position: absolute;
+        right: 0;
+        animation: caret infinite;
+        animation-duration: 1s;
+        animation-timing-function: steps(1, end);
+    }
+
+    /* code for gradient text, refer to https://codepen.io/leocampos/pen/pPwwNR */
+    .gradientText{
+       text-transform: uppercase;
+        background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+        background: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);	-webkit-background-clip: text;
+        background: linear-gradient(109.6deg, rgb(17, 151, 147) 11.2%, rgb(154, 214, 212) 55.4%, rgb(255, 233, 171) 100.2%);
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font: {
+            size: 20vw;
+            family: $font;
+        }
+    }
+
+/* @keyframes code from W3Schools */
+    @keyframes typewriter {
+    0%, 100% {
+        width: 0;
+            }
+    20%, 80% {
+        width: 10.2em;
+             }
+    }
+    @keyframes caret {
+    0%, 100% {
+        opacity: 0;
+            }
+    50% {
+        opacity: 1;
+        }
+    }
+    .intro{
+        line-height: 30px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    /* refer to https://codepen.io/leocampos/pen/pPwwNR for gradient text color code*/
+    .californiaText{
+    text-transform: uppercase;
+    background: linear-gradient(109.6deg, rgb(17, 151, 147) 11.2%, rgb(154, 214, 212) 55.4%, rgb(255, 233, 171) 100.2%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font: {
+		size: 20vw;
+    }
+    
+    }
+    .polaroids{
+        cursor: pointer;
+        margin: 0 auto;
+    }
+    .overlay{
+        position: relative;
+    }
+    .middle{
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+    }
+    .text{
+        background-color: lightgrey;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+    }
+    .footer{
+        text-decoration: none;
+        color: #F7B944;
+    }
+    .footer:hover {
+        padding: 0 12px;
+        background-color: #F7B944;
+        color: white;
+}
+</style>
+</head>
+<body>
+    <h2>
+            SALLY'S
+    </h2>
+    <h1>
+        <span class="movingText gradientText">
+            POLAROID WALL: 
+        </span>
+    </h1>
+   <h2>
+           CALIFORNIA ☀️ 🏝
+   </h2> 
+
+<p class="intro">
+    <br>
+        Snapshots I've captured of some of my favorite places in 
+        <span class = "californiaText">
+            <em>
+                California
+            </em>
+        </span> !
+    <br />
+        <em>
+            <strong>
+                Click   
+            </strong>
+        </em>
+        on the snapshots for more information on each of the places 🌊 ⛰ 🏖
+    <br>
+    <br>
+</p>
+
+<hr />
+
+<div class="container">
+<h3>
+    <br>
+   - NorCal -
+</h3>
+<p>
+        <center>
+            <img class="polaroids" id= "bigSur"src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/343/original/IMG_1939.jpg?1617412888"
+                width="200"
+                height="300" />
+            <img class="polaroids" id="pacificGrove" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/344/original/IMG_1940.jpg?1617413388"
+                 width="200"
+                height="300" />
+            <br>
+        </center>
+
+<h3>
+<br>
+   - 🌆 SoCal -
+</h3>
+    
+        <center>
+            <br>
+            <img class="polaroids" id="joshuaTree" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/342/original/IMG_1938.jpg?1617412216"   
+                width="200"
+                height="300" />
+            <img class="polaroids" id="santaMonica" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/469/original/IMG_1037.jpg?1617540992"
+                width="300"
+                height="200 "/>
+            <img class="polaroids" id="griffith" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/007/294/original/fullsizeoutput_ded.jpeg?1618632925"
+                width="200"
+                height="300 "/>
+            <img class="polaroids" id="sanDiego" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/007/293/original/fullsizeoutput_dec.jpeg?1618632583"
+                width="200"
+                height="300 "/>
+        </center>
+
+    <br />
+    <br />
+</div>
+
+    <button>
+        EXPLORE CALI 🏖      
+    </button>
+</p>
+
+<footer>
+    This page was built by 
+    <a class="footer" href="https://sallyyrong.github.io/" target="_blank">Sally Rong 👩🏻‍💻
+    </a>
+</footer>
+<script>
+    function clickPic1() {
+        alert("This is Big Sur in northern California 🚘 ⛰! A super scenic drive right along Highway 1.")
+    }
+    let bigSurButton = document.getElementById("bigSur");
+        bigSurButton.addEventListener("click", clickPic1);
+    
+    function clickPic2() {
+        alert("This is at Lovers Point Park in Pacific Grove near Monterey 🌊 ⚓️! A coastal spot characterized by beautiful rocks and crystal clear water 🗺.")
+    }
+    let pacificGroveButton = document.getElementById("pacificGrove");
+        pacificGroveButton.addEventListener("click", clickPic2);
+
+    function clickPic3() {
+        alert("This is Joshua Tree National Park 🏜! One of CA's 9 national parks, this desert park is wonderful for stargazing 🌌, camping ⛺️ 🔥, and hiking.")
+    }
+    let joshuaTreeButton = document.getElementById("joshuaTree");
+        joshuaTreeButton.addEventListener("click", clickPic3);
+    
+    function clickPic4() {
+        alert("This is Santa Monica Pier! 🎡 The iconic pier 30 minutes outside Los Angeles, it has an amusement park 🎢 and concession stands right on the beach! 🏖 ")
+    }
+    let santaMonicaButton = document.getElementById("santaMonica");
+        santaMonicaButton.addEventListener("click", clickPic4);
+
+    function clickPic5() {
+        alert("This is Griffith Observatory 🌗! In the heart of LA 🌆 and facing the Hollywood sign, Griffith Observatory is home to a planetarium and the most extraordinary city skyline view of the glimmering city 🌌 ✨.")
+    }
+    let griffithButton = document.getElementById("griffith");
+        griffithButton.addEventListener("click", clickPic5);
+
+    function clickPic6() {
+        alert("This was taken in sunny San Diego 🌅! I love San Diego for its beautiful weather, countless beaches 🌊 🏖, and great food. I call it the paradise of ✨vibes✨ in sunny San Diego!")
+    }
+    let sanDiegoButton = document.getElementById("sanDiego");
+        sanDiegoButton.addEventListener("click", clickPic6);
+    
+    function clickButton() {
+        let answer = prompt("Have you visited California before? Tell me Yes or No!")
+        answer = answer.toLowerCase().trim()
+        if (answer == "yes"){
+            alert ("Yay! 😎 I hope you might've recognized some of the places on my Polaroid Wall!! ☀️🏝");
+        } else {
+            alert ("Now you have some ideas of cool spots to visit in California from my Polaroid Wall! 🏝 🌆 🏜")
+        }
+    }
+    let button = document.querySelector("button");
+        button.addEventListener("click", clickButton)
+</script>
+</body>
+</html>

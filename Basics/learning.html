@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>
+Week 2 Lesson 8 - Javascript Functions
+</h1> 
+
+<script>
+    function getTemperature() {
+        alert(24);
+    }
+
+    getTemperature();
+    getTemperature();
+    
+    function getTemperature(city) {
+            if (city === "Lisbon") {
+                alert(24);
+            } else {
+                alert(-12.5);
+            }
+        }
+
+        getTemperature("Paris");
+        getTemperature("Lisbon");
+        let hometown = prompt("What is your hometown?");
+        getTemperature(hometown);
+
+
+    function getTemperature(city) {
+            if (city === 'Lisbon') {
+                return 18;
+            } else {
+                return 15;
+            }
+        }
+
+        let lisbonTemperature = getTemperature("Lisbon");
+        let parisTemperature = getTemperature("paris");
+        
+
+        function getTemperature(city, unit) {
+                if (city === "Lisbon") {
+                    if (unit == "metric") {
+                        return 18;
+                    }
+                } else {
+                    return 0;
+                }
+            }
+
+        let lisbonTemperature = getTemperature('Lisbon', 'metric');
+        let parisTemperature = getTemperature('paris', 'imperial');
+
+</script>
+</body>
+</html>

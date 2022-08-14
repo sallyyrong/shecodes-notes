@@ -1,0 +1,31 @@
+h1{
+    font-size: 60px;
+    font-family: 'Staatliches', cursive;
+    }
+.seventy{
+    font-size: 60px;
+    margin-left:55px;
+        }
+.celsius{
+    color: lightgray;
+        }
+
+.sunnycloudy-icon{
+    font-size: 60px;
+    color: lightsalmon;
+}
+.icon{
+    color: lightsalmon;
+    font-size: 30px;
+}
+.DayOfTheWk,
+.Temperature{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card{
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
